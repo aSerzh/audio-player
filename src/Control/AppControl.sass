@@ -1,0 +1,16 @@
+.AppControl
+  display: flex
+  flex-direction: row
+  & button
+    min-width: 32px
+    min-height: 32px
+    border: none
+    background: none
+  & :hover
+    cursor: pointer
+    fill-opacity: .50
+  & :disabled
+    fill-opacity: .10
+  & :disabled :hover
+    fill-opacity: .10
+    cursor: default
