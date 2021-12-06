@@ -4,7 +4,7 @@ import { AppButtonBackward } from "./Buttons/AppButtonBackward";
 export const AppControlBackward: FC = () => {
   return(
     <button className="backward">
-      { AppButtonBackward }
+      <AppButtonBackward />
     </button>
   )
 }

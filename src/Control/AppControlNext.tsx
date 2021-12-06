@@ -4,7 +4,7 @@ import { AppButtonNext } from "./Buttons/AppButtonNext";
 export const AppControlNext: FC = () => {
   return (
     <button className="next" disabled>
-      { AppButtonNext }
+      <AppButtonNext />
     </button>
   )
 }

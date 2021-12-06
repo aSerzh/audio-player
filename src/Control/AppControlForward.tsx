@@ -4,7 +4,7 @@ import { AppButtonForward } from "./Buttons/AppButtonForward";
 export const AppControlForward: FC = () => {
   return (
     <button className="forward">
-      { AppButtonForward }
+      <AppButtonForward />
     </button>
   )
 }
