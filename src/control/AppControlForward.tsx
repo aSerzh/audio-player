@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { AppButtonForward } from "./Buttons/AppButtonForward";
+import { AppButtonForward } from "./buttons/AppButtonForward";
 
 export const AppControlForward: FC = () => {
   return (

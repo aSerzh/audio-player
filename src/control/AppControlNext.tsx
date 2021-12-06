@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { AppButtonNext } from "./Buttons/AppButtonNext";
+import { AppButtonNext } from "./buttons/AppButtonNext";
 
 export const AppControlNext: FC = () => {
   return (

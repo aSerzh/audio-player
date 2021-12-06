@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { FC } from 'react';
 import "./App.sass"
-import { AppAudio } from "./Audio/AppAudio"
-import { AppTime } from "./Time/AppTime";
-import { AppProgress } from "./Progress/AppProgress";
-import { AppControl } from "./Control/AppControl";
+import { AppAudio } from "./audio/AppAudio"
+import { AppTime } from "./time/AppTime";
+import { AppProgress } from "./progress/AppProgress";
+import { AppControl } from "./control/AppControl";
+import { AppContext, useAppContext } from "./contexts/AppContext";
 
-function App() {
+
+export const App: FC = () => {
+  const appContext = useAppContext()
+
   return (
-    <div className="App">
-      <AppAudio />
-      <AppTime />
-      <AppProgress />
-      <AppControl />
-    </div>
-  );
+    <AppContext.Provider value={appContext}>
+
+      <div className="App">
+        <AppAudio />
+        <AppTime />
+        <AppProgress />
+        <AppControl />
+      </div>
+
+    </AppContext.Provider>
+  )
 }
 
-export default App;
+

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { AppButtonPlay } from "./Buttons/AppButtonPlay";
+import { AppButtonPlay } from "./buttons/AppButtonPlay";
 
 export const AppControlPlay: FC = () => {
   return (
